@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>P2PRequestAsPayerResponse Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/P2PRequestAsPayerResponse" class="dashAnchor"></a>
+    <a title="P2PRequestAsPayerResponse Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">EPINetworking Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">EPINetworking Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        P2PRequestAsPayerResponse Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CancelBag.html">CancelBag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CancelBag/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConsumerPspRepository.html">ConsumerPspRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPINetworkingClient.html">EPINetworkingClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPIRepositoriesFactory.html">EPIRepositoriesFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPIServicesFactory.html">EPIServicesFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkingFactory.html">NetworkingFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentSourceRepository.html">PaymentSourceRepository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ContentType.html">ContentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EPINetworkingLogLevel.html">EPINetworkingLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GrantType.html">GrantType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPHeaderField.html">HTTPHeaderField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loadable.html">Loadable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OAuthScope.html">OAuthScope</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/P2PRequestStatus.html">P2PRequestStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ParameterEncoding.html">ParameterEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PaymentSourceProxyType.html">PaymentSourceProxyType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/AnyCancellable.html">AnyCancellable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONDecoder.html">JSONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONEncoder.html">JSONEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Publisher.html">Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/APICall.html">APICall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AccessTokenProviding.html">AccessTokenProviding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AuthenticationRepositoryProtocol.html">AuthenticationRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AuthenticationServicing.html">AuthenticationServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConsentRepositoryProtocol.html">ConsentRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConsentServicing.html">ConsentServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConsumerPspRepositoryProtocol.html">ConsumerPspRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConsumerPspServicing.html">ConsumerPspServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EPINetworkingAuthorization.html">EPINetworkingAuthorization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EPINetworkingClientProtocol.html">EPINetworkingClientProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EPIRepositoriesProtocol.html">EPIRepositoriesProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EPIServicesProtocol.html">EPIServicesProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/P2PRepositoryProtocol.html">P2PRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/P2PServicing.html">P2PServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PaymentSourceRepositoryProtocol.html">PaymentSourceRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PaymentSourceServicing.html">PaymentSourceServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WalletProvisioningRepositoryProtocol.html">WalletProvisioningRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WalletProvisioningServicing.html">WalletProvisioningServicing</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AccessToken.html">AccessToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddContactItemPayload.html">AddContactItemPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddContactItemResponse.html">AddContactItemResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddContactItemResponse/PaymentSourceProxyLinks.html">– PaymentSourceProxyLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddContactItemResponse/ContactItemState.html">– ContactItemState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddProxyPayload.html">AddProxyPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddProxyResponse.html">AddProxyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddProxyResponse/AddProxyResponseLinks.html">– AddProxyResponseLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AllProvisioningsResponse.html">AllProvisioningsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AllProvisioningsResponse/Provisionings.html">– Provisionings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AuthenticationRepository.html">AuthenticationRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AuthenticationService.html">AuthenticationService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Consent.html">Consent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Consent/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Consent/Token.html">– Token</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Consent/Links.html">– Links</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentRepository.html">ConsentRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentRequest.html">ConsentRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentRequest/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentRequest/Approval.html">– Approval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentRequest/PaymentPlan.html">– PaymentPlan</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentRequestApproval.html">ConsentRequestApproval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentService.html">ConsentService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentSignablePayload.html">ConsentSignablePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentSignablePayload/Beneficiary.html">– Beneficiary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPsp.html">ConsumerPsp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPsp/ProfileImage.html">– ProfileImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPsp/Meta.html">– Meta</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPsp/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPspService.html">ConsumerPspService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPsps.html">ConsumerPsps</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPspsResponse.html">ConsumerPspsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContactItemVerification.html">ContactItemVerification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContactProxyHash.html">ContactProxyHash</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContactProxyIndicator.html">ContactProxyIndicator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateConsentRequest.html">CreateConsentRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateP2PPaymentAsPayerRequest.html">CreateP2PPaymentAsPayerRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateP2PPaymentAsPayerResponse.html">CreateP2PPaymentAsPayerResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateP2PPaymentAsPayerResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateP2PRequestAsPayeeRequest.html">CreateP2PRequestAsPayeeRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateWalletProvisioningPayload.html">CreateWalletProvisioningPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EPIRepositories.html">EPIRepositories</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EPIServices.html">EPIServices</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EditPaymentSourcePayload.html">EditPaymentSourcePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EditPaymentSourceResponse.html">EditPaymentSourceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EditPaymentSourceResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EditPaymentSourceResponse/EditPaymentSourceResponseLinks.html">– EditPaymentSourceResponseLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkError.html">NetworkError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OAuthRequest.html">OAuthRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PConsentSignablePayload.html">P2PConsentSignablePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PConsentSignablePayload/Beneficiary.html">– Beneficiary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PPayment.html">P2PPayment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PPayment/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PPaymentApprovalRequest.html">P2PPaymentApprovalRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PPaymentsFetchData.html">P2PPaymentsFetchData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PPaymentsFetchResponse.html">P2PPaymentsFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PPaymentsFetchResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PReceivedRequestsFetchResponse.html">P2PReceivedRequestsFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PReceivedRequestsFetchResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRepository.html">P2PRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestApprovalRequest.html">P2PRequestApprovalRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestApprovalResponse.html">P2PRequestApprovalResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestApprovalResponse/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestApprovalResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestAsPayeeResponse.html">P2PRequestAsPayeeResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestAsPayeeResponse/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestAsPayeeResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestAsPayerResponse.html">P2PRequestAsPayerResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestAsPayerResponse/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestAsPayerResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestsFetchData.html">P2PRequestsFetchData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PSentRequestsFetchResponse.html">P2PSentRequestsFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PSentRequestsFetchResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PService.html">P2PService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaginationData.html">PaginationData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentAmount.html">PaymentAmount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentMean.html">PaymentMean</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentMean/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentMeans.html">PaymentMeans</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentRules.html">PaymentRules</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentRules/PaymentRule.html">– PaymentRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentRules/Constraint.html">– Constraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSource.html">PaymentSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceProfile.html">PaymentSourceProfile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceProxy.html">PaymentSourceProxy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceProxy/PaymentSourceProxyLinks.html">– PaymentSourceProxyLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceService.html">PaymentSourceService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceUpdatePayload.html">PaymentSourceUpdatePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceUpdateResponse.html">PaymentSourceUpdateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceUpdateResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceUpdateResponse/PaymentSourceUpdateLinks.html">– PaymentSourceUpdateLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Provisioning.html">Provisioning</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Provisioning/Links.html">– Links</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Provisioning/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProxyCustomerDetailsResponse.html">ProxyCustomerDetailsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProxyIndicatorRequestPayload.html">ProxyIndicatorRequestPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProxyIndicatorResponsePayload.html">ProxyIndicatorResponsePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProxyOTPPayload.html">ProxyOTPPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PublicKey.html">PublicKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RequestOTPResponse.html">RequestOTPResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RequestOTPResponse/Links.html">– Links</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResponseLink.html">ResponseLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Wallet.html">Wallet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Wallet.html#/s:13EPINetworking6WalletV0B5LinksV">– WalletLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WalletProvisioningRepository.html">WalletProvisioningRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WalletProvisioningService.html">WalletProvisioningService</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13EPINetworking15LoadableSubjecta">LoadableSubject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13EPINetworking19RemoveProxyResponsea">RemoveProxyResponse</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>P2PRequestAsPayerResponse</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PRequestAsPayerResponse</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Identifiable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Response model for fetching a P2P request as a payer (requested money).</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayerResponseV2idSSvp"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayerResponseV2idSSvp">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The unique identifier of the P2P request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayerResponseV6amountAA13PaymentAmountVvp"></a>
+                    <a name="//apple_ref/swift/Property/amount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayerResponseV6amountAA13PaymentAmountVvp">amount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The amount of the P2P request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt"><a href="../Structs/PaymentAmount.html">PaymentAmount</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayerResponseV7messageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/message" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayerResponseV7messageSSvp">message</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The message associated with the P2P request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayerResponseV6statusAC6StatusVvp"></a>
+                    <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayerResponseV6statusAC6StatusVvp">status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The status of the P2P request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Structs/P2PRequestAsPayerResponse/Status.html">Status</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayerResponseV7createdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/created" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayerResponseV7createdSSvp">created</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The creation timestamp of the P2P request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">created</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayerResponseV8embeddedAC8EmbeddedVvp"></a>
+                    <a name="//apple_ref/swift/Property/embedded" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayerResponseV8embeddedAC8EmbeddedVvp">embedded</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The embedded data associated with the P2P request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">embedded</span><span class="p">:</span> <span class="kt"><a href="../Structs/P2PRequestAsPayerResponse/Embedded.html">Embedded</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayerResponseV6StatusV"></a>
+                    <a name="//apple_ref/swift/Struct/Status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayerResponseV6StatusV">Status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The status of the P2P request.</p>
+
+                        <a href="../Structs/P2PRequestAsPayerResponse/Status.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Status</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayerResponseV8EmbeddedV"></a>
+                    <a name="//apple_ref/swift/Struct/Embedded" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayerResponseV8EmbeddedV">Embedded</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The embedded data associated with the P2P request.</p>
+
+                        <a href="../Structs/P2PRequestAsPayerResponse/Embedded.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Embedded</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayerResponseV2id6amount7message6status7created8embeddedACSS_AA13PaymentAmountVSSAC6StatusVSSAC8EmbeddedVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(id:amount:message:status:created:embedded:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayerResponseV2id6amount7message6status7created8embeddedACSS_AA13PaymentAmountVSSAC6StatusVSSAC8EmbeddedVtcfc">init(id:<wbr>amount:<wbr>message:<wbr>status:<wbr>created:<wbr>embedded:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a <code>P2PRequestAsPayerResponse</code> instance with the provided values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">amount</span><span class="p">:</span> <span class="kt"><a href="../Structs/PaymentAmount.html">PaymentAmount</a></span><span class="p">,</span>
+    <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Structs/P2PRequestAsPayerResponse/Status.html">Status</a></span><span class="p">,</span>
+    <span class="nv">created</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">embedded</span><span class="p">:</span> <span class="kt"><a href="../Structs/P2PRequestAsPayerResponse/Embedded.html">Embedded</a></span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The unique identifier of the P2P request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>amount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The amount of the P2P request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The message associated with the P2P request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>status</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The status of the P2P request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>created</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The creation timestamp of the P2P request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>embedded</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The embedded data associated with the P2P request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-05-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

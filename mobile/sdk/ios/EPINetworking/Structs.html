@@ -1,0 +1,2448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Structures  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Structures" class="dashAnchor"></a>
+    <a title="Structures  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">EPINetworking Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">EPINetworking Reference</a>
+        <img id="carat" src="img/carat.png" alt=""/>
+        Structures  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/CancelBag.html">CancelBag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CancelBag/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ConsumerPspRepository.html">ConsumerPspRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EPINetworkingClient.html">EPINetworkingClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EPIRepositoriesFactory.html">EPIRepositoriesFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EPIServicesFactory.html">EPIServicesFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/NetworkingFactory.html">NetworkingFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PaymentSourceRepository.html">PaymentSourceRepository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/ContentType.html">ContentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EPINetworkingLogLevel.html">EPINetworkingLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/GrantType.html">GrantType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/HTTPHeaderField.html">HTTPHeaderField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Loadable.html">Loadable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/OAuthScope.html">OAuthScope</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/P2PRequestStatus.html">P2PRequestStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ParameterEncoding.html">ParameterEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PaymentSourceProxyType.html">PaymentSourceProxyType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/AnyCancellable.html">AnyCancellable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/JSONDecoder.html">JSONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/JSONEncoder.html">JSONEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Publisher.html">Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/URL.html">URL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/APICall.html">APICall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/AccessTokenProviding.html">AccessTokenProviding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/AuthenticationRepositoryProtocol.html">AuthenticationRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/AuthenticationServicing.html">AuthenticationServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ConsentRepositoryProtocol.html">ConsentRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ConsentServicing.html">ConsentServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ConsumerPspRepositoryProtocol.html">ConsumerPspRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ConsumerPspServicing.html">ConsumerPspServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EPINetworkingAuthorization.html">EPINetworkingAuthorization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EPINetworkingClientProtocol.html">EPINetworkingClientProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EPIRepositoriesProtocol.html">EPIRepositoriesProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EPIServicesProtocol.html">EPIServicesProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/P2PRepositoryProtocol.html">P2PRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/P2PServicing.html">P2PServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/PaymentSourceRepositoryProtocol.html">PaymentSourceRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/PaymentSourceServicing.html">PaymentSourceServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/WalletProvisioningRepositoryProtocol.html">WalletProvisioningRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/WalletProvisioningServicing.html">WalletProvisioningServicing</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/AccessToken.html">AccessToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AddContactItemPayload.html">AddContactItemPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AddContactItemResponse.html">AddContactItemResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AddContactItemResponse/PaymentSourceProxyLinks.html">– PaymentSourceProxyLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AddContactItemResponse/ContactItemState.html">– ContactItemState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AddProxyPayload.html">AddProxyPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AddProxyResponse.html">AddProxyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AddProxyResponse/AddProxyResponseLinks.html">– AddProxyResponseLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AllProvisioningsResponse.html">AllProvisioningsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AllProvisioningsResponse/Provisionings.html">– Provisionings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AuthenticationRepository.html">AuthenticationRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AuthenticationService.html">AuthenticationService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Consent.html">Consent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Consent/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Consent/Token.html">– Token</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Consent/Links.html">– Links</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsentRepository.html">ConsentRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsentRequest.html">ConsentRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsentRequest/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsentRequest/Approval.html">– Approval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsentRequest/PaymentPlan.html">– PaymentPlan</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsentRequestApproval.html">ConsentRequestApproval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsentService.html">ConsentService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsentSignablePayload.html">ConsentSignablePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsentSignablePayload/Beneficiary.html">– Beneficiary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsumerPsp.html">ConsumerPsp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsumerPsp/ProfileImage.html">– ProfileImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsumerPsp/Meta.html">– Meta</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsumerPsp/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsumerPspService.html">ConsumerPspService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsumerPsps.html">ConsumerPsps</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConsumerPspsResponse.html">ConsumerPspsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ContactItemVerification.html">ContactItemVerification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ContactProxyHash.html">ContactProxyHash</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ContactProxyIndicator.html">ContactProxyIndicator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/CreateConsentRequest.html">CreateConsentRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/CreateP2PPaymentAsPayerRequest.html">CreateP2PPaymentAsPayerRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/CreateP2PPaymentAsPayerResponse.html">CreateP2PPaymentAsPayerResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/CreateP2PPaymentAsPayerResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/CreateP2PRequestAsPayeeRequest.html">CreateP2PRequestAsPayeeRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/CreateWalletProvisioningPayload.html">CreateWalletProvisioningPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EPIRepositories.html">EPIRepositories</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EPIServices.html">EPIServices</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EditPaymentSourcePayload.html">EditPaymentSourcePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EditPaymentSourceResponse.html">EditPaymentSourceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EditPaymentSourceResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EditPaymentSourceResponse/EditPaymentSourceResponseLinks.html">– EditPaymentSourceResponseLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkError.html">NetworkError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/OAuthRequest.html">OAuthRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PConsentSignablePayload.html">P2PConsentSignablePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PConsentSignablePayload/Beneficiary.html">– Beneficiary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PPayment.html">P2PPayment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PPayment/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PPaymentApprovalRequest.html">P2PPaymentApprovalRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PPaymentsFetchData.html">P2PPaymentsFetchData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PPaymentsFetchResponse.html">P2PPaymentsFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PPaymentsFetchResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PReceivedRequestsFetchResponse.html">P2PReceivedRequestsFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PReceivedRequestsFetchResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PRepository.html">P2PRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PRequestApprovalRequest.html">P2PRequestApprovalRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PRequestApprovalResponse.html">P2PRequestApprovalResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PRequestApprovalResponse/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PRequestApprovalResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PRequestAsPayeeResponse.html">P2PRequestAsPayeeResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PRequestAsPayeeResponse/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PRequestAsPayeeResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PRequestAsPayerResponse.html">P2PRequestAsPayerResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PRequestAsPayerResponse/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PRequestAsPayerResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PRequestsFetchData.html">P2PRequestsFetchData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PSentRequestsFetchResponse.html">P2PSentRequestsFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PSentRequestsFetchResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/P2PService.html">P2PService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaginationData.html">PaginationData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentAmount.html">PaymentAmount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentMean.html">PaymentMean</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentMean/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentMeans.html">PaymentMeans</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentRules.html">PaymentRules</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentRules/PaymentRule.html">– PaymentRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentRules/Constraint.html">– Constraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentSource.html">PaymentSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentSourceProfile.html">PaymentSourceProfile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentSourceProxy.html">PaymentSourceProxy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentSourceProxy/PaymentSourceProxyLinks.html">– PaymentSourceProxyLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentSourceService.html">PaymentSourceService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentSourceUpdatePayload.html">PaymentSourceUpdatePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentSourceUpdateResponse.html">PaymentSourceUpdateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentSourceUpdateResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PaymentSourceUpdateResponse/PaymentSourceUpdateLinks.html">– PaymentSourceUpdateLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Provisioning.html">Provisioning</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Provisioning/Links.html">– Links</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Provisioning/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ProxyCustomerDetailsResponse.html">ProxyCustomerDetailsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ProxyIndicatorRequestPayload.html">ProxyIndicatorRequestPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ProxyIndicatorResponsePayload.html">ProxyIndicatorResponsePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ProxyOTPPayload.html">ProxyOTPPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PublicKey.html">PublicKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RequestOTPResponse.html">RequestOTPResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RequestOTPResponse/Links.html">– Links</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ResponseLink.html">ResponseLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Wallet.html">Wallet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Wallet.html#/s:13EPINetworking6WalletV0B5LinksV">– WalletLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/WalletProvisioningRepository.html">WalletProvisioningRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/WalletProvisioningService.html">WalletProvisioningService</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:13EPINetworking15LoadableSubjecta">LoadableSubject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:13EPINetworking19RemoveProxyResponsea">RemoveProxyResponse</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Structures</h1>
+            <p>The following structures are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking12NetworkErrorV"></a>
+                    <a name="//apple_ref/swift/Struct/NetworkError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking12NetworkErrorV">NetworkError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>Swift.Error</code> struct representing networking errro within EPI Networking context.</p>
+
+                        <a href="Structs/NetworkError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NetworkError</span> <span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking15EPIRepositoriesV"></a>
+                    <a name="//apple_ref/swift/Struct/EPIRepositories" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking15EPIRepositoriesV">EPIRepositories</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implementation of the EPI repositories.</p>
+
+                        <a href="Structs/EPIRepositories.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EPIRepositories</span> <span class="p">:</span> <span class="kt"><a href="Protocols/EPIRepositoriesProtocol.html">EPIRepositoriesProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking11EPIServicesV"></a>
+                    <a name="//apple_ref/swift/Struct/EPIServices" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking11EPIServicesV">EPIServices</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implementation of the EPI services.</p>
+
+                        <a href="Structs/EPIServices.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EPIServices</span> <span class="p">:</span> <span class="kt"><a href="Protocols/EPIServicesProtocol.html">EPIServicesProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking11AccessTokenV"></a>
+                    <a name="//apple_ref/swift/Struct/AccessToken" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking11AccessTokenV">AccessToken</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Struct representing an access token.</p>
+
+                        <a href="Structs/AccessToken.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AccessToken</span> <span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking12OAuthRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/OAuthRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking12OAuthRequestV">OAuthRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Struct representing an OAuth request.</p>
+
+                        <a href="Structs/OAuthRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OAuthRequest</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking22ConsentSignablePayloadV"></a>
+                    <a name="//apple_ref/swift/Struct/ConsentSignablePayload" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking22ConsentSignablePayloadV">ConsentSignablePayload</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a signable payload for consent.</p>
+
+                        <a href="Structs/ConsentSignablePayload.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConsentSignablePayload</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking20CreateConsentRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/CreateConsentRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking20CreateConsentRequestV">CreateConsentRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a create consent request.</p>
+
+                        <a href="Structs/CreateConsentRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateConsentRequest</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking7ConsentV"></a>
+                    <a name="//apple_ref/swift/Struct/Consent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking7ConsentV">Consent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a consent.</p>
+
+                        <a href="Structs/Consent.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Consent</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking22ConsentRequestApprovalV"></a>
+                    <a name="//apple_ref/swift/Struct/ConsentRequestApproval" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking22ConsentRequestApprovalV">ConsentRequestApproval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the approval status of a consent request.</p>
+
+                        <a href="Structs/ConsentRequestApproval.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConsentRequestApproval</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking14ConsentRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/ConsentRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking14ConsentRequestV">ConsentRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a consent request.</p>
+
+                        <a href="Structs/ConsentRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConsentRequest</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking12PaymentRulesV"></a>
+                    <a name="//apple_ref/swift/Struct/PaymentRules" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking12PaymentRulesV">PaymentRules</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents struct holding collection of payment rules.</p>
+
+                        <a href="Structs/PaymentRules.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PaymentRules</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking20ConsumerPspsResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/ConsumerPspsResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking20ConsumerPspsResponseV">ConsumerPspsResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the response containing embedded consumer PSPs.</p>
+
+                        <a href="Structs/ConsumerPspsResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConsumerPspsResponse</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking12ConsumerPspsV"></a>
+                    <a name="//apple_ref/swift/Struct/ConsumerPsps" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking12ConsumerPspsV">ConsumerPsps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a collection of consumer PSPs.</p>
+
+                        <a href="Structs/ConsumerPsps.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConsumerPsps</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking11ConsumerPspV"></a>
+                    <a name="//apple_ref/swift/Struct/ConsumerPsp" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking11ConsumerPspV">ConsumerPsp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a Consumer Payment Service Provider (PSP).</p>
+
+                        <a href="Structs/ConsumerPsp.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConsumerPsp</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PConsentSignablePayloadV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PConsentSignablePayload" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PConsentSignablePayloadV">P2PConsentSignablePayload</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A payload representing the signable data for P2P consent.</p>
+
+                        <a href="Structs/P2PConsentSignablePayload.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PConsentSignablePayload</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PPaymentApprovalRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PPaymentApprovalRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PPaymentApprovalRequestV">P2PPaymentApprovalRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The signing request payload for approving a P2P payment.</p>
+
+                        <a href="Structs/P2PPaymentApprovalRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PPaymentApprovalRequest</span> <span class="p">:</span> <span class="kt">Encodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking28ProxyCustomerDetailsResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/ProxyCustomerDetailsResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking28ProxyCustomerDetailsResponseV">ProxyCustomerDetailsResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The response containing details of a proxy customer.</p>
+
+                        <a href="Structs/ProxyCustomerDetailsResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ProxyCustomerDetailsResponse</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking16ContactProxyHashV"></a>
+                    <a name="//apple_ref/swift/Struct/ContactProxyHash" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking16ContactProxyHashV">ContactProxyHash</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a contact proxy hash used in the context of proxy indicator requests.</p>
+
+                        <a href="Structs/ContactProxyHash.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ContactProxyHash</span> <span class="p">:</span> <span class="kt">Encodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking28ProxyIndicatorRequestPayloadV"></a>
+                    <a name="//apple_ref/swift/Struct/ProxyIndicatorRequestPayload" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking28ProxyIndicatorRequestPayloadV">ProxyIndicatorRequestPayload</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the payload for a proxy indicator request.</p>
+
+                        <a href="Structs/ProxyIndicatorRequestPayload.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ProxyIndicatorRequestPayload</span> <span class="p">:</span> <span class="kt">Encodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking29ProxyIndicatorResponsePayloadV"></a>
+                    <a name="//apple_ref/swift/Struct/ProxyIndicatorResponsePayload" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking29ProxyIndicatorResponsePayloadV">ProxyIndicatorResponsePayload</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the payload of a proxy indicator response.</p>
+
+                        <a href="Structs/ProxyIndicatorResponsePayload.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ProxyIndicatorResponsePayload</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking21ContactProxyIndicatorV"></a>
+                    <a name="//apple_ref/swift/Struct/ContactProxyIndicator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking21ContactProxyIndicatorV">ContactProxyIndicator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a contact proxy indicator.</p>
+
+                        <a href="Structs/ContactProxyIndicator.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ContactProxyIndicator</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking30CreateP2PRequestAsPayeeRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/CreateP2PRequestAsPayeeRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking30CreateP2PRequestAsPayeeRequestV">CreateP2PRequestAsPayeeRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Request model for creating a P2P request as a payer (requesting).</p>
+
+                        <a href="Structs/CreateP2PRequestAsPayeeRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateP2PRequestAsPayeeRequest</span> <span class="p">:</span> <span class="kt">Encodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayeeResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PRequestAsPayeeResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayeeResponseV">P2PRequestAsPayeeResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Response model for fetching a P2P request as a payee (requesting money).</p>
+
+                        <a href="Structs/P2PRequestAsPayeeResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PRequestAsPayeeResponse</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Identifiable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayerResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PRequestAsPayerResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayerResponseV">P2PRequestAsPayerResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Response model for fetching a P2P request as a payer (requested money).</p>
+
+                        <a href="Structs/P2PRequestAsPayerResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PRequestAsPayerResponse</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Identifiable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking30CreateP2PPaymentAsPayerRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/CreateP2PPaymentAsPayerRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking30CreateP2PPaymentAsPayerRequestV">CreateP2PPaymentAsPayerRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Request model for creating a person-to-person (P2P) payment as a payer (sending).</p>
+
+                        <a href="Structs/CreateP2PPaymentAsPayerRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateP2PPaymentAsPayerRequest</span> <span class="p">:</span> <span class="kt">Encodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking31CreateP2PPaymentAsPayerResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/CreateP2PPaymentAsPayerResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking31CreateP2PPaymentAsPayerResponseV">CreateP2PPaymentAsPayerResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Response model for creating a person-to-person (P2P) payment as a payer (sending).</p>
+
+                        <a href="Structs/CreateP2PPaymentAsPayerResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateP2PPaymentAsPayerResponse</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Identifiable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking20P2PPaymentsFetchDataV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PPaymentsFetchData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking20P2PPaymentsFetchDataV">P2PPaymentsFetchData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the data used for fetching person-to-person (P2P) payments.</p>
+
+                        <a href="Structs/P2PPaymentsFetchData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PPaymentsFetchData</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking24P2PPaymentsFetchResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PPaymentsFetchResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking24P2PPaymentsFetchResponseV">P2PPaymentsFetchResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the response for fetching person-to-person (P2P) payments.</p>
+
+                        <a href="Structs/P2PPaymentsFetchResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PPaymentsFetchResponse</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking10P2PPaymentV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PPayment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking10P2PPaymentV">P2PPayment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a person-to-person (P2P) payment.</p>
+
+                        <a href="Structs/P2PPayment.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PPayment</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Identifiable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestApprovalRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PRequestApprovalRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestApprovalRequestV">P2PRequestApprovalRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request for pre-approval of the send money person-to-person (P2P) request.</p>
+
+                        <a href="Structs/P2PRequestApprovalRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PRequestApprovalRequest</span> <span class="p">:</span> <span class="kt">Encodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking26P2PRequestApprovalResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PRequestApprovalResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking26P2PRequestApprovalResponseV">P2PRequestApprovalResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The response model for the approval of a person-to-person (P2P) request (sending money).</p>
+
+                        <a href="Structs/P2PRequestApprovalResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PRequestApprovalResponse</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking32P2PReceivedRequestsFetchResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PReceivedRequestsFetchResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking32P2PReceivedRequestsFetchResponseV">P2PReceivedRequestsFetchResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The response model for fetching received person-to-person (P2P) requests.</p>
+
+                        <a href="Structs/P2PReceivedRequestsFetchResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PReceivedRequestsFetchResponse</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking20P2PRequestsFetchDataV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PRequestsFetchData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking20P2PRequestsFetchDataV">P2PRequestsFetchData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The data used for fetching person-to-person (P2P) requests.</p>
+
+                        <a href="Structs/P2PRequestsFetchData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PRequestsFetchData</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking28P2PSentRequestsFetchResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PSentRequestsFetchResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking28P2PSentRequestsFetchResponseV">P2PSentRequestsFetchResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The response model for fetching sent person-to-person (P2P) requests.</p>
+
+                        <a href="Structs/P2PSentRequestsFetchResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PSentRequestsFetchResponse</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking14PaginationDataV"></a>
+                    <a name="//apple_ref/swift/Struct/PaginationData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking14PaginationDataV">PaginationData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents pagination data.</p>
+
+                        <a href="Structs/PaginationData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PaginationData</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking12PaymentMeansV"></a>
+                    <a name="//apple_ref/swift/Struct/PaymentMeans" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking12PaymentMeansV">PaymentMeans</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a collection of payment means.</p>
+
+                        <a href="Structs/PaymentMeans.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PaymentMeans</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking11PaymentMeanV"></a>
+                    <a name="//apple_ref/swift/Struct/PaymentMean" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking11PaymentMeanV">PaymentMean</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a payment mean.</p>
+
+                        <a href="Structs/PaymentMean.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PaymentMean</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Identifiable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking20PaymentSourceProfileV"></a>
+                    <a name="//apple_ref/swift/Struct/PaymentSourceProfile" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking20PaymentSourceProfileV">PaymentSourceProfile</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a payment source profile.</p>
+
+                        <a href="Structs/PaymentSourceProfile.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PaymentSourceProfile</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18PaymentSourceProxyV"></a>
+                    <a name="//apple_ref/swift/Struct/PaymentSourceProxy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18PaymentSourceProxyV">PaymentSourceProxy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a payment source proxy.</p>
+
+                        <a href="Structs/PaymentSourceProxy.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PaymentSourceProxy</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking13PaymentAmountV"></a>
+                    <a name="//apple_ref/swift/Struct/PaymentAmount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking13PaymentAmountV">PaymentAmount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A struct representing a payment amount.</p>
+
+                        <a href="Structs/PaymentAmount.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PaymentAmount</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking21AddContactItemPayloadV"></a>
+                    <a name="//apple_ref/swift/Struct/AddContactItemPayload" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking21AddContactItemPayloadV">AddContactItemPayload</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the payload for adding a contact item.</p>
+
+                        <a href="Structs/AddContactItemPayload.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AddContactItemPayload</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking22AddContactItemResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/AddContactItemResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking22AddContactItemResponseV">AddContactItemResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the response for adding a contact item.</p>
+
+                        <a href="Structs/AddContactItemResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AddContactItemResponse</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking23ContactItemVerificationV"></a>
+                    <a name="//apple_ref/swift/Struct/ContactItemVerification" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking23ContactItemVerificationV">ContactItemVerification</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the verification details for a contact item.</p>
+
+                        <a href="Structs/ContactItemVerification.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ContactItemVerification</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking15AddProxyPayloadV"></a>
+                    <a name="//apple_ref/swift/Struct/AddProxyPayload" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking15AddProxyPayloadV">AddProxyPayload</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The payload for adding a proxy.</p>
+
+                        <a href="Structs/AddProxyPayload.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AddProxyPayload</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking16AddProxyResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/AddProxyResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking16AddProxyResponseV">AddProxyResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The response returned after adding a proxy.</p>
+
+                        <a href="Structs/AddProxyResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AddProxyResponse</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking24EditPaymentSourcePayloadV"></a>
+                    <a name="//apple_ref/swift/Struct/EditPaymentSourcePayload" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking24EditPaymentSourcePayloadV">EditPaymentSourcePayload</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The payload used for editing a payment source.</p>
+
+                        <a href="Structs/EditPaymentSourcePayload.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EditPaymentSourcePayload</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25EditPaymentSourceResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/EditPaymentSourceResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25EditPaymentSourceResponseV">EditPaymentSourceResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The response received after editing a payment source.</p>
+
+                        <a href="Structs/EditPaymentSourceResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EditPaymentSourceResponse</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking15ProxyOTPPayloadV"></a>
+                    <a name="//apple_ref/swift/Struct/ProxyOTPPayload" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking15ProxyOTPPayloadV">ProxyOTPPayload</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The payload containing the one-time password (OTP) for proxy authentication.</p>
+
+                        <a href="Structs/ProxyOTPPayload.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ProxyOTPPayload</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18RequestOTPResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/RequestOTPResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18RequestOTPResponseV">RequestOTPResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The response received after requesting a one-time password (OTP).</p>
+
+                        <a href="Structs/RequestOTPResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RequestOTPResponse</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking26PaymentSourceUpdatePayloadV"></a>
+                    <a name="//apple_ref/swift/Struct/PaymentSourceUpdatePayload" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking26PaymentSourceUpdatePayloadV">PaymentSourceUpdatePayload</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the payload for updating a payment source.</p>
+
+                        <a href="Structs/PaymentSourceUpdatePayload.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PaymentSourceUpdatePayload</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking27PaymentSourceUpdateResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/PaymentSourceUpdateResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking27PaymentSourceUpdateResponseV">PaymentSourceUpdateResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the response for updating a payment source.</p>
+
+                        <a href="Structs/PaymentSourceUpdateResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PaymentSourceUpdateResponse</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking13PaymentSourceV"></a>
+                    <a name="//apple_ref/swift/Struct/PaymentSource" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking13PaymentSourceV">PaymentSource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a payment source.</p>
+
+                        <a href="Structs/PaymentSource.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PaymentSource</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Identifiable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking12ProvisioningV"></a>
+                    <a name="//apple_ref/swift/Struct/Provisioning" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking12ProvisioningV">Provisioning</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a provisioning of payment sources.</p>
+
+                        <a href="Structs/Provisioning.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Provisioning</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Identifiable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking24AllProvisioningsResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/AllProvisioningsResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking24AllProvisioningsResponseV">AllProvisioningsResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a response containing all provisionings.</p>
+
+                        <a href="Structs/AllProvisioningsResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AllProvisioningsResponse</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking9PublicKeyV"></a>
+                    <a name="//apple_ref/swift/Struct/PublicKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking9PublicKeyV">PublicKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A struct representing a public key.</p>
+
+                        <a href="Structs/PublicKey.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PublicKey</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking12ResponseLinkV"></a>
+                    <a name="//apple_ref/swift/Struct/ResponseLink" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking12ResponseLinkV">ResponseLink</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A struct representing a HAL link in a response.</p>
+
+                        <a href="Structs/ResponseLink.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResponseLink</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking31CreateWalletProvisioningPayloadV"></a>
+                    <a name="//apple_ref/swift/Struct/CreateWalletProvisioningPayload" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking31CreateWalletProvisioningPayloadV">CreateWalletProvisioningPayload</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A struct representing the payload for creating a wallet provisioning.</p>
+
+                        <a href="Structs/CreateWalletProvisioningPayload.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateWalletProvisioningPayload</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking6WalletV"></a>
+                    <a name="//apple_ref/swift/Struct/Wallet" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking6WalletV">Wallet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A struct representing a wallet.</p>
+
+                        <a href="Structs/Wallet.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Wallet</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Identifiable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking24AuthenticationRepositoryV"></a>
+                    <a name="//apple_ref/swift/Struct/AuthenticationRepository" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking24AuthenticationRepositoryV">AuthenticationRepository</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A concrete implementation of the <code><a href="Protocols/AuthenticationRepositoryProtocol.html">AuthenticationRepositoryProtocol</a></code>.</p>
+
+                        <a href="Structs/AuthenticationRepository.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AuthenticationRepository</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AuthenticationRepositoryProtocol.html">AuthenticationRepositoryProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking17ConsentRepositoryV"></a>
+                    <a name="//apple_ref/swift/Struct/ConsentRepository" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking17ConsentRepositoryV">ConsentRepository</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A concrete implementation of the <code><a href="Protocols/ConsentRepositoryProtocol.html">ConsentRepositoryProtocol</a></code> for managing consent-related data operations.</p>
+
+                        <a href="Structs/ConsentRepository.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConsentRepository</span> <span class="p">:</span> <span class="kt"><a href="Protocols/ConsentRepositoryProtocol.html">ConsentRepositoryProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking13P2PRepositoryV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PRepository" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking13P2PRepositoryV">P2PRepository</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A repository for performing P2P (Peer-to-Peer) operations.</p>
+
+                        <a href="Structs/P2PRepository.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PRepository</span> <span class="p">:</span> <span class="kt"><a href="Protocols/P2PRepositoryProtocol.html">P2PRepositoryProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking28WalletProvisioningRepositoryV"></a>
+                    <a name="//apple_ref/swift/Struct/WalletProvisioningRepository" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking28WalletProvisioningRepositoryV">WalletProvisioningRepository</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A concrete implementation of the <code><a href="Protocols/WalletProvisioningRepositoryProtocol.html">WalletProvisioningRepositoryProtocol</a></code> that communicates with the network.</p>
+
+                        <a href="Structs/WalletProvisioningRepository.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">WalletProvisioningRepository</span> <span class="p">:</span> <span class="kt"><a href="Protocols/WalletProvisioningRepositoryProtocol.html">WalletProvisioningRepositoryProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking21AuthenticationServiceV"></a>
+                    <a name="//apple_ref/swift/Struct/AuthenticationService" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking21AuthenticationServiceV">AuthenticationService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The implementation of the AuthenticationServicing protocol.</p>
+
+                        <a href="Structs/AuthenticationService.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AuthenticationService</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AuthenticationServicing.html">AuthenticationServicing</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking14ConsentServiceV"></a>
+                    <a name="//apple_ref/swift/Struct/ConsentService" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking14ConsentServiceV">ConsentService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A service implementation for managing consent-related operations.</p>
+
+                        <a href="Structs/ConsentService.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConsentService</span> <span class="p">:</span> <span class="kt"><a href="Protocols/ConsentServicing.html">ConsentServicing</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18ConsumerPspServiceV"></a>
+                    <a name="//apple_ref/swift/Struct/ConsumerPspService" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18ConsumerPspServiceV">ConsumerPspService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The implementation of the <code><a href="Protocols/ConsumerPspServicing.html">ConsumerPspServicing</a></code> protocol.</p>
+
+                        <a href="Structs/ConsumerPspService.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConsumerPspService</span> <span class="p">:</span> <span class="kt"><a href="Protocols/ConsumerPspServicing.html">ConsumerPspServicing</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking10P2PServiceV"></a>
+                    <a name="//apple_ref/swift/Struct/P2PService" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking10P2PServiceV">P2PService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A service implementation for managing P2P (Person-to-Person) operations.</p>
+
+                        <a href="Structs/P2PService.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">P2PService</span> <span class="p">:</span> <span class="kt"><a href="Protocols/P2PServicing.html">P2PServicing</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking20PaymentSourceServiceV"></a>
+                    <a name="//apple_ref/swift/Struct/PaymentSourceService" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking20PaymentSourceServiceV">PaymentSourceService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A service implementation for managing payment source-related operations.</p>
+
+                        <a href="Structs/PaymentSourceService.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PaymentSourceService</span> <span class="p">:</span> <span class="kt"><a href="Protocols/PaymentSourceServicing.html">PaymentSourceServicing</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25WalletProvisioningServiceV"></a>
+                    <a name="//apple_ref/swift/Struct/WalletProvisioningService" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25WalletProvisioningServiceV">WalletProvisioningService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A service implementation for managing wallet provisioning operations.</p>
+
+                        <a href="Structs/WalletProvisioningService.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">WalletProvisioningService</span> <span class="p">:</span> <span class="kt"><a href="Protocols/WalletProvisioningServicing.html">WalletProvisioningServicing</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-05-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
