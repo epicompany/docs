@@ -1,0 +1,3320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NetworkErrorStatus Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/NetworkErrorStatus" class="dashAnchor"></a>
+    <a title="NetworkErrorStatus Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">EPINetworking Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">EPINetworking Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        NetworkErrorStatus Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CancelBag.html">CancelBag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CancelBag/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPINetworkingClient.html">EPINetworkingClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPINetworkingFactory.html">EPINetworkingFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPIRepositoriesFactory.html">EPIRepositoriesFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPIServicesFactory.html">EPIServicesFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkingFactory.html">NetworkingFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentSourceRepository.html">PaymentSourceRepository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ContentType.html">ContentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EPINetworkingLogLevel.html">EPINetworkingLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GrantType.html">GrantType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPHeaderField.html">HTTPHeaderField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loadable.html">Loadable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkErrorStatus.html">NetworkErrorStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OAuthScope.html">OAuthScope</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/P2PRequestStatus.html">P2PRequestStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ParameterEncoding.html">ParameterEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PaymentSourceProxyType.html">PaymentSourceProxyType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/AnyCancellable.html">AnyCancellable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONDecoder.html">JSONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONEncoder.html">JSONEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/ObservableObject.html">ObservableObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Publisher.html">Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/APICall.html">APICall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AccessTokenProviding.html">AccessTokenProviding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AuthenticationRepositoryProtocol.html">AuthenticationRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AuthenticationServicing.html">AuthenticationServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EPINetworkingAuthorization.html">EPINetworkingAuthorization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EPINetworkingClientProtocol.html">EPINetworkingClientProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EPIRepositoriesProtocol.html">EPIRepositoriesProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EPIServicesProtocol.html">EPIServicesProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkingFactoryProtocol.html">NetworkingFactoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/P2PRepositoryProtocol.html">P2PRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/P2PServicing.html">P2PServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PaymentSourceRepositoryProtocol.html">PaymentSourceRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PaymentSourceServicing.html">PaymentSourceServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ProxyRepositoryProtocol.html">ProxyRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ProxyServicing.html">ProxyServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WalletProvisioningRepositoryProtocol.html">WalletProvisioningRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WalletProvisioningServicing.html">WalletProvisioningServicing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WalletRepositoryProtocol.html">WalletRepositoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WalletServicing.html">WalletServicing</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AccessToken.html">AccessToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddContactItemPayload.html">AddContactItemPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddContactItemResponse.html">AddContactItemResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddContactItemResponse/PaymentSourceProxyLinks.html">– PaymentSourceProxyLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddContactItemResponse/ContactItemState.html">– ContactItemState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddProxyPayload.html">AddProxyPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddProxyResponse.html">AddProxyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AddProxyResponse/AddProxyResponseLinks.html">– AddProxyResponseLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AllProvisioningsResponse.html">AllProvisioningsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AllProvisioningsResponse/Provisionings.html">– Provisionings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AuthenticationRepository.html">AuthenticationRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AuthenticationService.html">AuthenticationService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Consent.html">Consent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Consent/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Consent/Token.html">– Token</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Consent/Links.html">– Links</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentRequest.html">ConsentRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentRequest/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentRequest/Approval.html">– Approval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentRequest/PaymentPlan.html">– PaymentPlan</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentRequestApproval.html">ConsentRequestApproval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentSignablePayload.html">ConsentSignablePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsentSignablePayload/Beneficiary.html">– Beneficiary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPsp.html">ConsumerPsp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPsp/ProfileImage.html">– ProfileImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPsp/Meta.html">– Meta</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPsp/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPsps.html">ConsumerPsps</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerPspsResponse.html">ConsumerPspsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContactItemVerification.html">ContactItemVerification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContactProxyHash.html">ContactProxyHash</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContactProxyIndicator.html">ContactProxyIndicator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateConsentRequest.html">CreateConsentRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateP2PPaymentAsPayerRequest.html">CreateP2PPaymentAsPayerRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateP2PPaymentAsPayerResponse.html">CreateP2PPaymentAsPayerResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateP2PPaymentAsPayerResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateP2PRequestAsPayeeRequest.html">CreateP2PRequestAsPayeeRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateWalletProvisioningPayload.html">CreateWalletProvisioningPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EPINetworkingConfiguration.html">EPINetworkingConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EPIRepositories.html">EPIRepositories</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EPIServices.html">EPIServices</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EditPaymentSourcePayload.html">EditPaymentSourcePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EditPaymentSourceResponse.html">EditPaymentSourceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EditPaymentSourceResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EditPaymentSourceResponse/EditPaymentSourceResponseLinks.html">– EditPaymentSourceResponseLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkError.html">NetworkError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OAuthRequest.html">OAuthRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PConsentSignablePayload.html">P2PConsentSignablePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PConsentSignablePayload/Beneficiary.html">– Beneficiary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PPayment.html">P2PPayment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PPayment/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PPaymentApprovalRequest.html">P2PPaymentApprovalRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PPaymentsFetchData.html">P2PPaymentsFetchData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PPaymentsFetchResponse.html">P2PPaymentsFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PPaymentsFetchResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PReceivedRequestsFetchResponse.html">P2PReceivedRequestsFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PReceivedRequestsFetchResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRepository.html">P2PRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestApprovalRequest.html">P2PRequestApprovalRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestApprovalResponse.html">P2PRequestApprovalResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestApprovalResponse/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestApprovalResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestAsPayeeResponse.html">P2PRequestAsPayeeResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestAsPayeeResponse/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestAsPayeeResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestAsPayerResponse.html">P2PRequestAsPayerResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestAsPayerResponse/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestAsPayerResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PRequestsFetchData.html">P2PRequestsFetchData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PSentRequestsFetchResponse.html">P2PSentRequestsFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PSentRequestsFetchResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/P2PService.html">P2PService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaginationData.html">PaginationData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentAmount.html">PaymentAmount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentMean.html">PaymentMean</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentMean/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentMeans.html">PaymentMeans</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentRules.html">PaymentRules</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentRules/PaymentRule.html">– PaymentRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentRules/Constraint.html">– Constraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSource.html">PaymentSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceProfile.html">PaymentSourceProfile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceProxy.html">PaymentSourceProxy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceProxy/PaymentSourceProxyLinks.html">– PaymentSourceProxyLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceService.html">PaymentSourceService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceUpdatePayload.html">PaymentSourceUpdatePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceUpdateResponse.html">PaymentSourceUpdateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceUpdateResponse/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PaymentSourceUpdateResponse/PaymentSourceUpdateLinks.html">– PaymentSourceUpdateLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Provisioning.html">Provisioning</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Provisioning/Links.html">– Links</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Provisioning/Embedded.html">– Embedded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProxyCustomerDetailsResponse.html">ProxyCustomerDetailsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProxyIndicatorRequestPayload.html">ProxyIndicatorRequestPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProxyIndicatorResponsePayload.html">ProxyIndicatorResponsePayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProxyOTPPayload.html">ProxyOTPPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProxyRepository.html">ProxyRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProxyService.html">ProxyService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PublicKey.html">PublicKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RequestOTPResponse.html">RequestOTPResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RequestOTPResponse/Links.html">– Links</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResponseLink.html">ResponseLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Wallet.html">Wallet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Wallet.html#/s:13EPINetworking6WalletV0B5LinksV">– WalletLinks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WalletProvisioningRepository.html">WalletProvisioningRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WalletProvisioningService.html">WalletProvisioningService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WalletRepository.html">WalletRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WalletService.html">WalletService</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13EPINetworking15LoadableSubjecta">LoadableSubject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13EPINetworking19RemoveProxyResponsea">RemoveProxyResponse</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>NetworkErrorStatus</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">NetworkErrorStatus</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents the status codes for network errors.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO7unknownyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unknown" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO7unknownyA2CmF">unknown</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unknown network error. Status code: -1</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unknown</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO18networkUnreachableyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/networkUnreachable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO18networkUnreachableyA2CmF">networkUnreachable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Network is unreachable. Status code: 0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">networkUnreachable</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO21unableToParseResponseyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unableToParseResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO21unableToParseResponseyA2CmF">unableToParseResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unable to parse response. Status code: 1</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unableToParseResponse</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO20unableToParseRequestyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unableToParseRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO20unableToParseRequestyA2CmF">unableToParseRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unable to parse request. Status code: 2</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unableToParseRequest</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO08continueC0yA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/continueError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO08continueC0yA2CmF">continueError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Continue error. Status code: 100</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">continueError</span> <span class="o">=</span> <span class="mi">100</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO18switchingProtocolsyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/switchingProtocols" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO18switchingProtocolsyA2CmF">switchingProtocols</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Switching protocols. Status code: 101</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">switchingProtocols</span> <span class="o">=</span> <span class="mi">101</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO10processingyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/processing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO10processingyA2CmF">processing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Processing. Status code: 102</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">processing</span> <span class="o">=</span> <span class="mi">102</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO2okyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/ok" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO2okyA2CmF">ok</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>OK. Status code: 200</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">ok</span> <span class="o">=</span> <span class="mi">200</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO7createdyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/created" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO7createdyA2CmF">created</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Created. Status code: 201</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">created</span> <span class="o">=</span> <span class="mi">201</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO8acceptedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/accepted" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO8acceptedyA2CmF">accepted</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accepted. Status code: 202</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">accepted</span> <span class="o">=</span> <span class="mi">202</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO27nonAuthoritativeInformationyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/nonAuthoritativeInformation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO27nonAuthoritativeInformationyA2CmF">nonAuthoritativeInformation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Non-Authoritative Information. Status code: 203</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">nonAuthoritativeInformation</span> <span class="o">=</span> <span class="mi">203</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO9noContentyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/noContent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO9noContentyA2CmF">noContent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>No Content. Status code: 204</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">noContent</span> <span class="o">=</span> <span class="mi">204</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO12resetContentyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/resetContent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO12resetContentyA2CmF">resetContent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reset Content. Status code: 205</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">resetContent</span> <span class="o">=</span> <span class="mi">205</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO14partialContentyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/partialContent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO14partialContentyA2CmF">partialContent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Partial Content. Status code: 206</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">partialContent</span> <span class="o">=</span> <span class="mi">206</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO05multiD0yA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/multiStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO05multiD0yA2CmF">multiStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Multi-Status. Status code: 207</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">multiStatus</span> <span class="o">=</span> <span class="mi">207</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO15alreadyReportedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/alreadyReported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO15alreadyReportedyA2CmF">alreadyReported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Already Reported. Status code: 208</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">alreadyReported</span> <span class="o">=</span> <span class="mi">208</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO6IMUsedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/IMUsed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO6IMUsedyA2CmF">IMUsed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>IM Used. Status code: 226</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">IMUsed</span> <span class="o">=</span> <span class="mi">226</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO15multipleChoicesyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/multipleChoices" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO15multipleChoicesyA2CmF">multipleChoices</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Multiple Choices. Status code: 300</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">multipleChoices</span> <span class="o">=</span> <span class="mi">300</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO16movedPermanentlyyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/movedPermanently" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO16movedPermanentlyyA2CmF">movedPermanently</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Moved Permanently. Status code: 301</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">movedPermanently</span> <span class="o">=</span> <span class="mi">301</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO5foundyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/found" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO5foundyA2CmF">found</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Found. Status code: 302</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">found</span> <span class="o">=</span> <span class="mi">302</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO8seeOtheryA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/seeOther" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO8seeOtheryA2CmF">seeOther</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>See Other. Status code: 303</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">seeOther</span> <span class="o">=</span> <span class="mi">303</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO11notModifiedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/notModified" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO11notModifiedyA2CmF">notModified</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Not Modified. Status code: 304</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">notModified</span> <span class="o">=</span> <span class="mi">304</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO8useProxyyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/useProxy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO8useProxyyA2CmF">useProxy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use Proxy. Status code: 305</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">useProxy</span> <span class="o">=</span> <span class="mi">305</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO11switchProxyyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/switchProxy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO11switchProxyyA2CmF">switchProxy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Switch Proxy. Status code: 306</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">switchProxy</span> <span class="o">=</span> <span class="mi">306</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO17temporaryRedirectyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/temporaryRedirect" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO17temporaryRedirectyA2CmF">temporaryRedirect</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Temporary Redirect. Status code: 307</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">temporaryRedirect</span> <span class="o">=</span> <span class="mi">307</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO17permenantRedirectyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/permenantRedirect" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO17permenantRedirectyA2CmF">permenantRedirect</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Permanent Redirect. Status code: 308</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">permenantRedirect</span> <span class="o">=</span> <span class="mi">308</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO10badRequestyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/badRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO10badRequestyA2CmF">badRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bad Request. Status code: 400</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">badRequest</span> <span class="o">=</span> <span class="mi">400</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO12unauthorizedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unauthorized" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO12unauthorizedyA2CmF">unauthorized</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unauthorized. Status code: 401</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unauthorized</span> <span class="o">=</span> <span class="mi">401</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO15paymentRequiredyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/paymentRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO15paymentRequiredyA2CmF">paymentRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Payment Required. Status code: 402</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">paymentRequired</span> <span class="o">=</span> <span class="mi">402</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO9forbiddenyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/forbidden" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO9forbiddenyA2CmF">forbidden</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Forbidden. Status code: 403</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">forbidden</span> <span class="o">=</span> <span class="mi">403</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO8notFoundyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/notFound" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO8notFoundyA2CmF">notFound</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Not Found. Status code: 404</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">notFound</span> <span class="o">=</span> <span class="mi">404</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO16methodNotAllowedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/methodNotAllowed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO16methodNotAllowedyA2CmF">methodNotAllowed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method Not Allowed. Status code: 405</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">methodNotAllowed</span> <span class="o">=</span> <span class="mi">405</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO13notAcceptableyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/notAcceptable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO13notAcceptableyA2CmF">notAcceptable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Not Acceptable. Status code: 406</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">notAcceptable</span> <span class="o">=</span> <span class="mi">406</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO27proxyAuthenticationRequiredyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/proxyAuthenticationRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO27proxyAuthenticationRequiredyA2CmF">proxyAuthenticationRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Proxy Authentication Required. Status code: 407</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">proxyAuthenticationRequired</span> <span class="o">=</span> <span class="mi">407</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO14requestTimeoutyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/requestTimeout" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO14requestTimeoutyA2CmF">requestTimeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Request Timeout. Status code: 408</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">requestTimeout</span> <span class="o">=</span> <span class="mi">408</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO8conflictyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/conflict" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO8conflictyA2CmF">conflict</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Conflict. Status code: 409</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">conflict</span> <span class="o">=</span> <span class="mi">409</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO4goneyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/gone" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO4goneyA2CmF">gone</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gone. Status code: 410</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">gone</span> <span class="o">=</span> <span class="mi">410</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO14lengthRequiredyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/lengthRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO14lengthRequiredyA2CmF">lengthRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Length Required. Status code: 411</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">lengthRequired</span> <span class="o">=</span> <span class="mi">411</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO18preconditionFailedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/preconditionFailed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO18preconditionFailedyA2CmF">preconditionFailed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Precondition Failed. Status code: 412</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">preconditionFailed</span> <span class="o">=</span> <span class="mi">412</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO15payloadTooLargeyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/payloadTooLarge" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO15payloadTooLargeyA2CmF">payloadTooLarge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Payload Too Large. Status code: 413</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">payloadTooLarge</span> <span class="o">=</span> <span class="mi">413</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO10uriTooLongyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/uriTooLong" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO10uriTooLongyA2CmF">uriTooLong</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>URI Too Long. Status code: 414</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">uriTooLong</span> <span class="o">=</span> <span class="mi">414</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO20unsupportedMediaTypeyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unsupportedMediaType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO20unsupportedMediaTypeyA2CmF">unsupportedMediaType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unsupported Media Type. Status code: 415</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unsupportedMediaType</span> <span class="o">=</span> <span class="mi">415</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO19rangeNotSatisfiableyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/rangeNotSatisfiable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO19rangeNotSatisfiableyA2CmF">rangeNotSatisfiable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Range Not Satisfiable. Status code: 416</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">rangeNotSatisfiable</span> <span class="o">=</span> <span class="mi">416</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO17expectationFailedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/expectationFailed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO17expectationFailedyA2CmF">expectationFailed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Expectation Failed. Status code: 417</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">expectationFailed</span> <span class="o">=</span> <span class="mi">417</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO6teapotyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/teapot" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO6teapotyA2CmF">teapot</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Teapot. Status code: 418</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">teapot</span> <span class="o">=</span> <span class="mi">418</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO18misdirectedRequestyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/misdirectedRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO18misdirectedRequestyA2CmF">misdirectedRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Misdirected Request. Status code: 421</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">misdirectedRequest</span> <span class="o">=</span> <span class="mi">421</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO19unprocessableEntityyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unprocessableEntity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO19unprocessableEntityyA2CmF">unprocessableEntity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unprocessable Entity. Status code: 422</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unprocessableEntity</span> <span class="o">=</span> <span class="mi">422</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO6lockedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/locked" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO6lockedyA2CmF">locked</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Locked. Status code: 423</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">locked</span> <span class="o">=</span> <span class="mi">423</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO16failedDependencyyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/failedDependency" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO16failedDependencyyA2CmF">failedDependency</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Failed Dependency. Status code: 424</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">failedDependency</span> <span class="o">=</span> <span class="mi">424</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO15upgradeRequiredyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/upgradeRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO15upgradeRequiredyA2CmF">upgradeRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Upgrade Required. Status code: 426</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">upgradeRequired</span> <span class="o">=</span> <span class="mi">426</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO20preconditionRequiredyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/preconditionRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO20preconditionRequiredyA2CmF">preconditionRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Precondition Required. Status code: 428</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">preconditionRequired</span> <span class="o">=</span> <span class="mi">428</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO15tooManyRequestsyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tooManyRequests" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO15tooManyRequestsyA2CmF">tooManyRequests</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Too Many Requests. Status code: 429</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tooManyRequests</span> <span class="o">=</span> <span class="mi">429</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO27requestHeaderFieldsTooLargeyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/requestHeaderFieldsTooLarge" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO27requestHeaderFieldsTooLargeyA2CmF">requestHeaderFieldsTooLarge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Request Header Fields Too Large. Status code: 431</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">requestHeaderFieldsTooLarge</span> <span class="o">=</span> <span class="mi">431</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO26unavailableForLegalReasonsyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unavailableForLegalReasons" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO26unavailableForLegalReasonsyA2CmF">unavailableForLegalReasons</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unavailable For Legal Reasons. Status code: 451</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unavailableForLegalReasons</span> <span class="o">=</span> <span class="mi">451</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO10noResponseyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/noResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO10noResponseyA2CmF">noResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>No Response. Status code: 444</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">noResponse</span> <span class="o">=</span> <span class="mi">444</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO014sslCertificateC0yA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/sslCertificateError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO014sslCertificateC0yA2CmF">sslCertificateError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SSL Certificate Error. Status code: 495</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">sslCertificateError</span> <span class="o">=</span> <span class="mi">495</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO22sslCertificateRequiredyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/sslCertificateRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO22sslCertificateRequiredyA2CmF">sslCertificateRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SSL Certificate Required. Status code: 496</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">sslCertificateRequired</span> <span class="o">=</span> <span class="mi">496</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO26httpRequestSentToHTTPSPortyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/httpRequestSentToHTTPSPort" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO26httpRequestSentToHTTPSPortyA2CmF">httpRequestSentToHTTPSPort</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>HTTP Request Sent to HTTPS Port. Status code: 497</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">httpRequestSentToHTTPSPort</span> <span class="o">=</span> <span class="mi">497</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO19clientClosedRequestyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/clientClosedRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO19clientClosedRequestyA2CmF">clientClosedRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Client Closed Request. Status code: 499</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">clientClosedRequest</span> <span class="o">=</span> <span class="mi">499</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO014internalServerC0yA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/internalServerError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO014internalServerC0yA2CmF">internalServerError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Internal Server Error. Status code: 500</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalServerError</span> <span class="o">=</span> <span class="mi">500</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO14notImplementedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/notImplemented" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO14notImplementedyA2CmF">notImplemented</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Not Implemented. Status code: 501</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">notImplemented</span> <span class="o">=</span> <span class="mi">501</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO10badGatewayyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/badGateway" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO10badGatewayyA2CmF">badGateway</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bad Gateway. Status code: 502</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">badGateway</span> <span class="o">=</span> <span class="mi">502</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO18serviceUnavailableyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serviceUnavailable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO18serviceUnavailableyA2CmF">serviceUnavailable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Service Unavailable. Status code: 503</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serviceUnavailable</span> <span class="o">=</span> <span class="mi">503</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO14gatewayTimeoutyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/gatewayTimeout" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO14gatewayTimeoutyA2CmF">gatewayTimeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gateway Timeout. Status code: 504</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">gatewayTimeout</span> <span class="o">=</span> <span class="mi">504</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO23httpVersionNotSupportedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/httpVersionNotSupported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO23httpVersionNotSupportedyA2CmF">httpVersionNotSupported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>HTTP Version Not Supported. Status code: 505</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">httpVersionNotSupported</span> <span class="o">=</span> <span class="mi">505</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO21variantAlsoNegotiatesyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/variantAlsoNegotiates" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO21variantAlsoNegotiatesyA2CmF">variantAlsoNegotiates</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Variant Also Negotiates. Status code: 506</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">variantAlsoNegotiates</span> <span class="o">=</span> <span class="mi">506</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO19insufficientStorageyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/insufficientStorage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO19insufficientStorageyA2CmF">insufficientStorage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Insufficient Storage. Status code: 507</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">insufficientStorage</span> <span class="o">=</span> <span class="mi">507</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO12loopDetectedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/loopDetected" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO12loopDetectedyA2CmF">loopDetected</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loop Detected. Status code: 508</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">loopDetected</span> <span class="o">=</span> <span class="mi">508</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO11notExtendedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/notExtended" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO11notExtendedyA2CmF">notExtended</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Not Extended. Status code: 510</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">notExtended</span> <span class="o">=</span> <span class="mi">510</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO29networkAuthenticationRequiredyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/networkAuthenticationRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO29networkAuthenticationRequiredyA2CmF">networkAuthenticationRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Network Authentication Required. Status code: 511</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">networkAuthenticationRequired</span> <span class="o">=</span> <span class="mi">511</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO9cancelledyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cancelled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO9cancelledyA2CmF">cancelled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Request is cancelled. Status code: -999</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cancelled</span> <span class="o">=</span> <span class="o">-</span><span class="mi">999</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO6badURLyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/badURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO6badURLyA2CmF">badURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bad URL. Status code: -1000</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">badURL</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1000</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO8timedOutyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/timedOut" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO8timedOutyA2CmF">timedOut</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Timed out. Status code: -1001</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">timedOut</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1001</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO14unsupportedURLyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unsupportedURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO14unsupportedURLyA2CmF">unsupportedURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unsupported URL. Status code: -1002</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unsupportedURL</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1002</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO14cannotFindHostyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cannotFindHost" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO14cannotFindHostyA2CmF">cannotFindHost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cannot find host. Status code: -1003</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cannotFindHost</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1003</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO19cannotConnectToHostyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cannotConnectToHost" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO19cannotConnectToHostyA2CmF">cannotConnectToHost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cannot connect to host. Status code: -1004</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cannotConnectToHost</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1004</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO21networkConnectionLostyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/networkConnectionLost" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO21networkConnectionLostyA2CmF">networkConnectionLost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Network connection lost. Status code: -1005</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">networkConnectionLost</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1005</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO15dnsLookupFailedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/dnsLookupFailed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO15dnsLookupFailedyA2CmF">dnsLookupFailed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>DNS lookup failed. Status code: -1006</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">dnsLookupFailed</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1006</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO20httpTooManyRedirectsyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/httpTooManyRedirects" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO20httpTooManyRedirectsyA2CmF">httpTooManyRedirects</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Too many redirects. Status code: -1007</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">httpTooManyRedirects</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1007</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO19resourceUnavailableyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/resourceUnavailable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO19resourceUnavailableyA2CmF">resourceUnavailable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resource unavailable. Status code: -1008</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">resourceUnavailable</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1008</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO22notConnectedToInternetyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/notConnectedToInternet" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO22notConnectedToInternetyA2CmF">notConnectedToInternet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Not connected to the internet. Status code: -1009</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">notConnectedToInternet</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1009</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO29redirectToNonExistentLocationyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/redirectToNonExistentLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO29redirectToNonExistentLocationyA2CmF">redirectToNonExistentLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Redirect to nonexistent location. Status code: -1010</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">redirectToNonExistentLocation</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1010</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO17badServerResponseyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/badServerResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO17badServerResponseyA2CmF">badServerResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bad server response. Status code: -1011</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">badServerResponse</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1011</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO27userCancelledAuthenticationyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/userCancelledAuthentication" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO27userCancelledAuthenticationyA2CmF">userCancelledAuthentication</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User cancelled authentication. Status code: -1012</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">userCancelledAuthentication</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1012</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO26userAuthenticationRequiredyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/userAuthenticationRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO26userAuthenticationRequiredyA2CmF">userAuthenticationRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User authentication required. Status code: -1013</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">userAuthenticationRequired</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1013</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO16zeroByteResourceyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/zeroByteResource" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO16zeroByteResourceyA2CmF">zeroByteResource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zero byte resource. Status code: -1014</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">zeroByteResource</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1014</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO19cannotDecodeRawDatayA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cannotDecodeRawData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO19cannotDecodeRawDatayA2CmF">cannotDecodeRawData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cannot decode raw data. Status code: -1015</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cannotDecodeRawData</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1015</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO23cannotDecodeContentDatayA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cannotDecodeContentData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO23cannotDecodeContentDatayA2CmF">cannotDecodeContentData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cannot decode content data. Status code: -1016</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cannotDecodeContentData</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1016</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO19cannotParseResponseyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cannotParseResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO19cannotParseResponseyA2CmF">cannotParseResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cannot parse response. Status code: -1017</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cannotParseResponse</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1017</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO44appTransportSecurityRequiresSecureConnectionyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/appTransportSecurityRequiresSecureConnection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO44appTransportSecurityRequiresSecureConnectionyA2CmF">appTransportSecurityRequiresSecureConnection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>App Transport Security requires secure connection. Status code: -1022</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">appTransportSecurityRequiresSecureConnection</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1022</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO16fileDoesNotExistyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/fileDoesNotExist" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO16fileDoesNotExistyA2CmF">fileDoesNotExist</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>File does not exist. Status code: -1100</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">fileDoesNotExist</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1100</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO15fileIsDirectoryyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/fileIsDirectory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO15fileIsDirectoryyA2CmF">fileIsDirectory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>File is a directory. Status code: -1101</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">fileIsDirectory</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1101</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO23noPermissionsToReadFileyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/noPermissionsToReadFile" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO23noPermissionsToReadFileyA2CmF">noPermissionsToReadFile</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>No permissions to read file. Status code: -1102</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">noPermissionsToReadFile</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1102</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO24dataLengthExceedsMaximumyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/dataLengthExceedsMaximum" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO24dataLengthExceedsMaximumyA2CmF">dataLengthExceedsMaximum</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Data length exceeds maximum. Status code: -1103</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">dataLengthExceedsMaximum</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1103</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO22secureConnectionFailedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/secureConnectionFailed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO22secureConnectionFailedyA2CmF">secureConnectionFailed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Secure connection failed. Status code: -1200</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">secureConnectionFailed</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1200</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO27serverCertificateHasBadDateyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverCertificateHasBadDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO27serverCertificateHasBadDateyA2CmF">serverCertificateHasBadDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Server certificate has bad date. Status code: -1201</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverCertificateHasBadDate</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1201</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO26serverCertificateUntrustedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverCertificateUntrusted" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO26serverCertificateUntrustedyA2CmF">serverCertificateUntrusted</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Server certificate is untrusted. Status code: -1202</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverCertificateUntrusted</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1202</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO31serverCertificateHasUnknownRootyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverCertificateHasUnknownRoot" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO31serverCertificateHasUnknownRootyA2CmF">serverCertificateHasUnknownRoot</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Server certificate has unknown root. Status code: -1203</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverCertificateHasUnknownRoot</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1203</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO28serverCertificateNotYetValidyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverCertificateNotYetValid" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO28serverCertificateNotYetValidyA2CmF">serverCertificateNotYetValid</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Server certificate is not yet valid. Status code: -1204</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverCertificateNotYetValid</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1204</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO25clientCertificateRejectedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/clientCertificateRejected" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO25clientCertificateRejectedyA2CmF">clientCertificateRejected</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Client certificate is rejected. Status code: -1205</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">clientCertificateRejected</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1205</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO25clientCertificateRequiredyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/clientCertificateRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO25clientCertificateRequiredyA2CmF">clientCertificateRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Client certificate is required. Status code: -1206</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">clientCertificateRequired</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1206</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking18NetworkErrorStatusO014cannotLoadFromB0yA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cannotLoadFromNetwork" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking18NetworkErrorStatusO014cannotLoadFromB0yA2CmF">cannotLoadFromNetwork</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cannot load from network. Status code: -2000</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cannotLoadFromNetwork</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2000</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-05-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
