@@ -17,7 +17,7 @@
     <a title="ProxyRepositoryProtocol Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">EPINetworking Docs</a> (100% documented)</p>
+        <p><a href="../index.html">EPINetworking Docs</a> (98% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -509,6 +509,15 @@
                 <a href="../Structs/Wallet.html#/s:13EPINetworking6WalletV0B5LinksV">– WalletLinks</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/Wallet/Host.html">– Host</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Wallet/Device.html">– Device</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Wallet/App.html">– App</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/WalletProvisioningRepository.html">WalletProvisioningRepository</a>
               </li>
               <li class="nav-group-task">
@@ -555,9 +564,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13EPINetworking23ProxyRepositoryProtocolP06updateB10Indicatorsy7Combine12AnyPublisherVyAA0B24IndicatorResponsePayloadVAA12NetworkErrorVGAA0bj7RequestL0VF"></a>
-                    <a name="//apple_ref/swift/Method/updateProxyIndicators(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13EPINetworking23ProxyRepositoryProtocolP06updateB10Indicatorsy7Combine12AnyPublisherVyAA0B24IndicatorResponsePayloadVAA12NetworkErrorVGAA0bj7RequestL0VF">updateProxyIndicators(_:<wbr>)</a>
+                    <a name="/s:13EPINetworking23ProxyRepositoryProtocolP05fetchB10Indicatorsy7Combine12AnyPublisherVyAA0B24IndicatorResponsePayloadVAA12NetworkErrorVGAA0bj7RequestL0VF"></a>
+                    <a name="//apple_ref/swift/Method/fetchProxyIndicators(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking23ProxyRepositoryProtocolP05fetchB10Indicatorsy7Combine12AnyPublisherVyAA0B24IndicatorResponsePayloadVAA12NetworkErrorVGAA0bj7RequestL0VF">fetchProxyIndicators(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -565,14 +574,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Updates the proxy indicators with the specified payload.</p>
+                        <p>Fetches proxy indicators based on collection of proxy hashes that reflect local contacts data.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateProxyIndicators</span><span class="p">(</span><span class="n">_</span> <span class="nv">payload</span><span class="p">:</span> <span class="kt"><a href="../Structs/ProxyIndicatorRequestPayload.html">ProxyIndicatorRequestPayload</a></span><span class="p">)</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchProxyIndicators</span><span class="p">(</span><span class="n">_</span> <span class="nv">payload</span><span class="p">:</span> <span class="kt"><a href="../Structs/ProxyIndicatorRequestPayload.html">ProxyIndicatorRequestPayload</a></span><span class="p">)</span>
     <span class="o">-&gt;</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ProxyIndicatorResponsePayload.html">ProxyIndicatorResponsePayload</a></span><span class="p">,</span> <span class="kt"><a href="../Structs/NetworkError.html">NetworkError</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
@@ -589,7 +598,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The payload containing the proxy indicator information.</p>
+                                  <p>The payload containing the proxy hashes information.</p>
                                 </div>
                               </td>
                             </tr>
@@ -660,7 +669,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-05-30)</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-05-31)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

@@ -17,7 +17,7 @@
     <a title="Wallet Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">EPINetworking Docs</a> (100% documented)</p>
+        <p><a href="../index.html">EPINetworking Docs</a> (98% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -509,6 +509,15 @@
                 <a href="../Structs/Wallet.html#/s:13EPINetworking6WalletV0B5LinksV">– WalletLinks</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/Wallet/Host.html">– Host</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Wallet/Device.html">– Device</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Wallet/App.html">– App</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/WalletProvisioningRepository.html">WalletProvisioningRepository</a>
               </li>
               <li class="nav-group-task">
@@ -636,9 +645,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13EPINetworking6WalletV8deviceIdSSvp"></a>
-                    <a name="//apple_ref/swift/Property/deviceId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13EPINetworking6WalletV8deviceIdSSvp">deviceId</a>
+                    <a name="/s:13EPINetworking6WalletV4hostAC4HostVvp"></a>
+                    <a name="//apple_ref/swift/Property/host" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking6WalletV4hostAC4HostVvp">host</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -646,14 +655,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The device ID associated with the wallet.</p>
+                        <p>The Host info associated with the wallet.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">deviceId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">host</span><span class="p">:</span> <span class="kt"><a href="../Structs/Wallet/Host.html">Host</a></span></code></pre>
 
                         </div>
                       </div>
@@ -744,9 +753,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13EPINetworking6WalletV2id10walletName10consumerId06deviceG00D9PublicKey5links8embeddedACSS_S3SAA0iJ0VAC0B5LinksVSgAA12PaymentMeansVSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(id:walletName:consumerId:deviceId:walletPublicKey:links:embedded:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13EPINetworking6WalletV2id10walletName10consumerId06deviceG00D9PublicKey5links8embeddedACSS_S3SAA0iJ0VAC0B5LinksVSgAA12PaymentMeansVSgtcfc">init(id:<wbr>walletName:<wbr>consumerId:<wbr>deviceId:<wbr>walletPublicKey:<wbr>links:<wbr>embedded:<wbr>)</a>
+                    <a name="/s:13EPINetworking6WalletV2id10walletName10consumerId4host0D9PublicKey5links8embeddedACSS_S2SAC4HostVAA0iJ0VAC0B5LinksVSgAA12PaymentMeansVSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(id:walletName:consumerId:host:walletPublicKey:links:embedded:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking6WalletV2id10walletName10consumerId4host0D9PublicKey5links8embeddedACSS_S2SAC4HostVAA0iJ0VAC0B5LinksVSgAA12PaymentMeansVSgtcfc">init(id:<wbr>walletName:<wbr>consumerId:<wbr>host:<wbr>walletPublicKey:<wbr>links:<wbr>embedded:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -765,7 +774,7 @@
     <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
     <span class="nv">walletName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
     <span class="nv">consumerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-    <span class="nv">deviceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">host</span><span class="p">:</span> <span class="kt"><a href="../Structs/Wallet/Host.html">Host</a></span><span class="p">,</span>
     <span class="nv">walletPublicKey</span><span class="p">:</span> <span class="kt"><a href="../Structs/PublicKey.html">PublicKey</a></span><span class="p">,</span>
     <span class="nv">links</span><span class="p">:</span> <span class="kt"><a href="../Structs/Wallet.html#/s:13EPINetworking6WalletV0B5LinksV">WalletLinks</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">embedded</span><span class="p">:</span> <span class="kt"><a href="../Structs/PaymentMeans.html">PaymentMeans</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
@@ -816,12 +825,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>deviceId</em>
+                                <em>host</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The device ID associated with the wallet.</p>
+                                  <p>The Host information associated with the wallet.</p>
                                 </div>
                               </td>
                             </tr>
@@ -944,12 +953,96 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking6WalletV4HostV"></a>
+                    <a name="//apple_ref/swift/Struct/Host" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking6WalletV4HostV">Host</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Host information associated with the wallet.</p>
+
+                        <a href="../Structs/Wallet/Host.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Host</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking6WalletV6DeviceV"></a>
+                    <a name="//apple_ref/swift/Struct/Device" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking6WalletV6DeviceV">Device</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Device information associated with the wallet.</p>
+
+                        <a href="../Structs/Wallet/Device.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Device</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking6WalletV3AppV"></a>
+                    <a name="//apple_ref/swift/Struct/App" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking6WalletV3AppV">App</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>App information associated with the wallet.</p>
+
+                        <a href="../Structs/Wallet/App.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">App</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-05-30)</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-05-31)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
