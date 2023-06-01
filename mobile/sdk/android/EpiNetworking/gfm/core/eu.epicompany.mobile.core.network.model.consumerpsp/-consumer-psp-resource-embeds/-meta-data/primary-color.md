@@ -1,0 +1,6 @@
+//[core](../../../../index.md)/[eu.epicompany.mobile.core.network.model.consumerpsp](../../index.md)/[ConsumerPspResourceEmbeds](../index.md)/[MetaData](index.md)/[primaryColor](primary-color.md)
+
+# primaryColor
+
+[androidJvm]\
+val [primaryColor](primary-color.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)

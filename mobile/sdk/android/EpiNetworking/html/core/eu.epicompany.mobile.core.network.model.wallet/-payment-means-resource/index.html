@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PaymentMeansResource</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>core</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":core:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="core::eu.epicompany.mobile.core.network.model.wallet/PaymentMeansResource///PointingToDeclaration//197447377">
+  <div class="breadcrumbs"><a href="../../../index.html">core</a><span class="delimiter">/</span><a href="../index.html">eu.epicompany.mobile.core.network.model.wallet</a><span class="delimiter">/</span><span class="current">PaymentMeansResource</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Payment</span><wbr></wbr><span>Means</span><wbr></wbr><span><span>Resource</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">PaymentMeansResource</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>id<span class="token operator">: </span><a href="../../eu.epicompany.mobile.core.datatypes/index.html#545543244%2FClasslikes%2F197447377">UUID4</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentSourceId<span class="token operator">: </span><a href="../../eu.epicompany.mobile.core.datatypes/index.html#545543244%2FClasslikes%2F197447377">UUID4</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>externalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>consumerPspId<span class="token operator">: </span><a href="../../eu.epicompany.mobile.core.datatypes/index.html#545543244%2FClasslikes%2F197447377">UUID4</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>publicKey<span class="token operator">: </span><a href="../../eu.epicompany.mobile.core.domain.model.authentication/-j-w-k/index.html">JWK</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentSourceType<span class="token operator">: </span><a href="../-payment-means-type-resource/index.html">PaymentMeansTypeResource</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentSourceDisplayName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentSourceDisplayDigits<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>_embedded<span class="token operator">: </span><a href="../-payment-means-resource-embeds/index.html">PaymentMeansResourceEmbeds</a><span class="token operator"> = </span>PaymentMeansResourceEmbeds()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>_links<span class="token operator">: </span><a href="../-payment-means-resource-links/index.html">PaymentMeansResourceLinks</a><span class="token operator"> = </span>PaymentMeansResourceLinks()</span></span><span class="token punctuation">)</span> : <a href="../../eu.epicompany.mobile.core.network.hypermedia/-hal-resource/index.html">HalResource</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="914219221%2FConstructors%2F197447377" anchor-label="PaymentMeansResource" id="914219221%2FConstructors%2F197447377" data-filterable-set=":core:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":core:dokkaHtml/release" data-filterable-set=":core:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-payment-means-resource.html"><span>Payment</span><wbr></wbr><span>Means</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="914219221%2FConstructors%2F197447377"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="../../eu.epicompany.mobile.core.datatypes/index.html#545543244%2FClasslikes%2F197447377">UUID4</a><span class="token punctuation">, </span></span><span class="parameter ">paymentSourceId<span class="token operator">: </span><a href="../../eu.epicompany.mobile.core.datatypes/index.html#545543244%2FClasslikes%2F197447377">UUID4</a><span class="token punctuation">, </span></span><span class="parameter ">externalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">consumerPspId<span class="token operator">: </span><a href="../../eu.epicompany.mobile.core.datatypes/index.html#545543244%2FClasslikes%2F197447377">UUID4</a><span class="token punctuation">, </span></span><span class="parameter ">publicKey<span class="token operator">: </span><a href="../../eu.epicompany.mobile.core.domain.model.authentication/-j-w-k/index.html">JWK</a><span class="token punctuation">, </span></span><span class="parameter ">paymentSourceType<span class="token operator">: </span><a href="../-payment-means-type-resource/index.html">PaymentMeansTypeResource</a><span class="token punctuation">, </span></span><span class="parameter ">paymentSourceDisplayName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">paymentSourceDisplayDigits<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">_embedded<span class="token operator">: </span><a href="../-payment-means-resource-embeds/index.html">PaymentMeansResourceEmbeds</a><span class="token operator"> = </span>PaymentMeansResourceEmbeds()<span class="token punctuation">, </span></span><span class="parameter ">_links<span class="token operator">: </span><a href="../-payment-means-resource-links/index.html">PaymentMeansResourceLinks</a><span class="token operator"> = </span>PaymentMeansResourceLinks()</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="93112144%2FProperties%2F197447377" anchor-label="_embedded" id="93112144%2FProperties%2F197447377" data-filterable-set=":core:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":core:dokkaHtml/release" data-filterable-set=":core:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="_embedded.html"><span><span>_embedded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="93112144%2FProperties%2F197447377"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="_embedded.html">_embedded</a><span class="token operator">: </span><a href="../-payment-means-resource-embeds/index.html">PaymentMeansResourceEmbeds</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1195166823%2FProperties%2F197447377" anchor-label="_links" id="1195166823%2FProperties%2F197447377" data-filterable-set=":core:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":core:dokkaHtml/release" data-filterable-set=":core:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="_links.html"><span><span>_links</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1195166823%2FProperties%2F197447377"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="_links.html">_links</a><span class="token operator">: </span><a href="../-payment-means-resource-links/index.html">PaymentMeansResourceLinks</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1866952423%2FProperties%2F197447377" anchor-label="consumerPspId" id="1866952423%2FProperties%2F197447377" data-filterable-set=":core:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":core:dokkaHtml/release" data-filterable-set=":core:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="consumer-psp-id.html"><span>consumer</span><wbr></wbr><span>Psp</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1866952423%2FProperties%2F197447377"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="consumer-psp-id.html">consumerPspId</a><span class="token operator">: </span><a href="../../eu.epicompany.mobile.core.datatypes/index.html#545543244%2FClasslikes%2F197447377">UUID4</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="241040475%2FProperties%2F197447377" anchor-label="externalId" id="241040475%2FProperties%2F197447377" data-filterable-set=":core:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":core:dokkaHtml/release" data-filterable-set=":core:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="external-id.html"><span>external</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="241040475%2FProperties%2F197447377"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="external-id.html">externalId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-272178394%2FProperties%2F197447377" anchor-label="id" id="-272178394%2FProperties%2F197447377" data-filterable-set=":core:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":core:dokkaHtml/release" data-filterable-set=":core:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-272178394%2FProperties%2F197447377"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="id.html">id</a><span class="token operator">: </span><a href="../../eu.epicompany.mobile.core.datatypes/index.html#545543244%2FClasslikes%2F197447377">UUID4</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="125543866%2FProperties%2F197447377" anchor-label="paymentSourceDisplayDigits" id="125543866%2FProperties%2F197447377" data-filterable-set=":core:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":core:dokkaHtml/release" data-filterable-set=":core:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="payment-source-display-digits.html"><span>payment</span><wbr></wbr><span>Source</span><wbr></wbr><span>Display</span><wbr></wbr><span><span>Digits</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="125543866%2FProperties%2F197447377"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="payment-source-display-digits.html">paymentSourceDisplayDigits</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1407207307%2FProperties%2F197447377" anchor-label="paymentSourceDisplayName" id="-1407207307%2FProperties%2F197447377" data-filterable-set=":core:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":core:dokkaHtml/release" data-filterable-set=":core:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="payment-source-display-name.html"><span>payment</span><wbr></wbr><span>Source</span><wbr></wbr><span>Display</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1407207307%2FProperties%2F197447377"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="payment-source-display-name.html">paymentSourceDisplayName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1361828573%2FProperties%2F197447377" anchor-label="paymentSourceId" id="1361828573%2FProperties%2F197447377" data-filterable-set=":core:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":core:dokkaHtml/release" data-filterable-set=":core:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="payment-source-id.html"><span>payment</span><wbr></wbr><span>Source</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1361828573%2FProperties%2F197447377"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="payment-source-id.html">paymentSourceId</a><span class="token operator">: </span><a href="../../eu.epicompany.mobile.core.datatypes/index.html#545543244%2FClasslikes%2F197447377">UUID4</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="583278302%2FProperties%2F197447377" anchor-label="paymentSourceType" id="583278302%2FProperties%2F197447377" data-filterable-set=":core:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":core:dokkaHtml/release" data-filterable-set=":core:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="payment-source-type.html"><span>payment</span><wbr></wbr><span>Source</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="583278302%2FProperties%2F197447377"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="payment-source-type.html">paymentSourceType</a><span class="token operator">: </span><a href="../-payment-means-type-resource/index.html">PaymentMeansTypeResource</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1693877411%2FProperties%2F197447377" anchor-label="publicKey" id="1693877411%2FProperties%2F197447377" data-filterable-set=":core:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":core:dokkaHtml/release" data-filterable-set=":core:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="public-key.html"><span>public</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1693877411%2FProperties%2F197447377"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="public-key.html">publicKey</a><span class="token operator">: </span><a href="../../eu.epicompany.mobile.core.domain.model.authentication/-j-w-k/index.html">JWK</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
