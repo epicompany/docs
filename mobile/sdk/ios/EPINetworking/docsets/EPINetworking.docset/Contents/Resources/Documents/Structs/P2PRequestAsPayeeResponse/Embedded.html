@@ -549,9 +549,36 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13EPINetworking25P2PRequestAsPayeeResponseV8EmbeddedV12payerContactAeA020ProxyCustomerDetailsF0V_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(payerContact:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayeeResponseV8EmbeddedV12payerContactAeA020ProxyCustomerDetailsF0V_tcfc">init(payerContact:<wbr>)</a>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayeeResponseV8EmbeddedV10p2pPaymentAA0B8PPaymentVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/p2pPayment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayeeResponseV8EmbeddedV10p2pPaymentAA0B8PPaymentVSgvp">p2pPayment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The P2P payment associated with the P2P request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">p2pPayment</span><span class="p">:</span> <span class="kt"><a href="../../Structs/P2PPayment.html">P2PPayment</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13EPINetworking25P2PRequestAsPayeeResponseV8EmbeddedV12payerContact10p2pPaymentAeA020ProxyCustomerDetailsF0V_AA0B8PPaymentVSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(payerContact:p2pPayment:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13EPINetworking25P2PRequestAsPayeeResponseV8EmbeddedV12payerContact10p2pPaymentAeA020ProxyCustomerDetailsF0V_AA0B8PPaymentVSgtcfc">init(payerContact:<wbr>p2pPayment:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -566,7 +593,10 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">payerContact</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ProxyCustomerDetailsResponse.html">ProxyCustomerDetailsResponse</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">payerContact</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ProxyCustomerDetailsResponse.html">ProxyCustomerDetailsResponse</a></span><span class="p">,</span>
+    <span class="nv">p2pPayment</span><span class="p">:</span> <span class="kt"><a href="../../Structs/P2PPayment.html">P2PPayment</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -586,6 +616,18 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>p2pPayment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The details of the P2P Payment.</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
                       </div>
@@ -597,7 +639,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-06-02)</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-06-05)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
