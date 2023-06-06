@@ -21,6 +21,7 @@ interface [HalResource](index.md)
 | [AddContactItemResource](../../eu.epicompany.mobile.core.network.model.proxy/-add-contact-item-resource/index.md) |
 | [AddProxyResource](../../eu.epicompany.mobile.core.network.model.proxy/-add-proxy-resource/index.md) |
 | [EditPaymentSourceResource](../../eu.epicompany.mobile.core.network.model.proxy/-edit-payment-source-resource/index.md) |
+| [PaymentSourceProfileResource](../../eu.epicompany.mobile.core.network.model.proxy/-payment-source-profile-resource/index.md) |
 | [PaymentSourceUpdateResource](../../eu.epicompany.mobile.core.network.model.proxy/-payment-source-update-resource/index.md) |
 | [RequestOTPResource](../../eu.epicompany.mobile.core.network.model.proxy/-request-o-t-p-resource/index.md) |
 | [EmbeddedConsumerPspResource](../../eu.epicompany.mobile.core.network.model.wallet/-embedded-consumer-psp-resource/index.md) |

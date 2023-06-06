@@ -3,7 +3,7 @@
 # provideAccessToken
 
 [androidJvm]\
-abstract suspend fun [provideAccessToken](provide-access-token.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?
+abstract fun [provideAccessToken](provide-access-token.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?
 
 Provides an up-to-date access token.
 

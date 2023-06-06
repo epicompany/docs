@@ -3,7 +3,7 @@
 # addProxy
 
 [androidJvm]\
-abstract suspend fun [addProxy](add-proxy.md)(consumerId: [UUID4](../../eu.epicompany.mobile.core.datatypes/index.md#545543244%2FClasslikes%2F-1060529556), paymentSourceProfileID: [UUID4](../../eu.epicompany.mobile.core.datatypes/index.md#545543244%2FClasslikes%2F-1060529556), payload: [AddProxyRequest](../../eu.epicompany.mobile.core.network.model.proxy/-add-proxy-request/index.md)): [AddProxyResource](../../eu.epicompany.mobile.core.network.model.proxy/-add-proxy-resource/index.md)
+abstract fun [addProxy](add-proxy.md)(consumerId: [UUID4](../../eu.epicompany.mobile.core.datatypes/index.md#545543244%2FClasslikes%2F-1060529556), paymentSourceProfileID: [UUID4](../../eu.epicompany.mobile.core.datatypes/index.md#545543244%2FClasslikes%2F-1060529556), payload: [AddProxyRequest](../../eu.epicompany.mobile.core.network.model.proxy/-add-proxy-request/index.md)): [AddProxyResource](../../eu.epicompany.mobile.core.network.model.proxy/-add-proxy-resource/index.md)
 
 Adds a proxy to a payment source.
 

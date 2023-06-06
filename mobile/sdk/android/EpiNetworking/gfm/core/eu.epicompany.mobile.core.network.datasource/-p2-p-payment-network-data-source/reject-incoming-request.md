@@ -3,7 +3,7 @@
 # rejectIncomingRequest
 
 [androidJvm]\
-abstract suspend fun [rejectIncomingRequest](reject-incoming-request.md)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): Response&lt;[Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)&gt;
+abstract fun [rejectIncomingRequest](reject-incoming-request.md)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): Response&lt;[Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)&gt;
 
 Rejects an incoming P2P (Person-to-Person) request.
 

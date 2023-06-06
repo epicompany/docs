@@ -20,6 +20,7 @@
 | [eu.epicompany.mobile.core.network.hypermedia](core/eu.epicompany.mobile.core.network.hypermedia/index.md) |
 | [eu.epicompany.mobile.core.network.internal.retrofit](core/eu.epicompany.mobile.core.network.internal.retrofit/index.md) |
 | [eu.epicompany.mobile.core.network.internal.retrofit.interceptors](core/eu.epicompany.mobile.core.network.internal.retrofit.interceptors/index.md) |
+| [eu.epicompany.mobile.core.network.internal.retrofit.utilities](core/eu.epicompany.mobile.core.network.internal.retrofit.utilities/index.md) |
 | [eu.epicompany.mobile.core.network.model](core/eu.epicompany.mobile.core.network.model/index.md) |
 | [eu.epicompany.mobile.core.network.model.authentication](core/eu.epicompany.mobile.core.network.model.authentication/index.md) |
 | [eu.epicompany.mobile.core.network.model.consumer](core/eu.epicompany.mobile.core.network.model.consumer/index.md) |

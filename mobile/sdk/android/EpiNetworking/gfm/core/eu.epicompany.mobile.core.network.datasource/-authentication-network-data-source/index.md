@@ -11,4 +11,4 @@ The interface for providing authentication services.
 
 | Name | Summary |
 |---|---|
-| [refreshAccessToken](refresh-access-token.md) | [androidJvm]<br>abstract suspend fun [refreshAccessToken](refresh-access-token.md)(assertionJwt: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [TokenResource](../../eu.epicompany.mobile.core.network.model/-token-resource/index.md)<br>Refreshes the access token. |
+| [refreshAccessToken](refresh-access-token.md) | [androidJvm]<br>abstract fun [refreshAccessToken](refresh-access-token.md)(assertionJwt: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [TokenResource](../../eu.epicompany.mobile.core.network.model/-token-resource/index.md)<br>Refreshes the access token. |

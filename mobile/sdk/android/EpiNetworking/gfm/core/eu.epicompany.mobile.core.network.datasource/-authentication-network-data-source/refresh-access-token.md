@@ -3,7 +3,7 @@
 # refreshAccessToken
 
 [androidJvm]\
-abstract suspend fun [refreshAccessToken](refresh-access-token.md)(assertionJwt: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [TokenResource](../../eu.epicompany.mobile.core.network.model/-token-resource/index.md)
+abstract fun [refreshAccessToken](refresh-access-token.md)(assertionJwt: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [TokenResource](../../eu.epicompany.mobile.core.network.model/-token-resource/index.md)
 
 Refreshes the access token.
 

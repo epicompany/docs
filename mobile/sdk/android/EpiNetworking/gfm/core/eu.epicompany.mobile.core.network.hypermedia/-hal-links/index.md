@@ -16,6 +16,7 @@ interface [HalLinks](index.md)
 | [PaymentSourceProxyLinks](../../eu.epicompany.mobile.core.network.model.proxy/-payment-source-proxy-links/index.md) |
 | [AddProxyResponseLinks](../../eu.epicompany.mobile.core.network.model.proxy/-add-proxy-response-links/index.md) |
 | [EditPaymentSourceResponseLinks](../../eu.epicompany.mobile.core.network.model.proxy/-edit-payment-source-response-links/index.md) |
+| [PaymentSourceProfileResponseLinks](../../eu.epicompany.mobile.core.network.model.proxy/-payment-source-profile-response-links/index.md) |
 | [PaymentSourceUpdateLinks](../../eu.epicompany.mobile.core.network.model.proxy/-payment-source-update-links/index.md) |
 | [RequestOTPLinks](../../eu.epicompany.mobile.core.network.model.proxy/-request-o-t-p-links/index.md) |
 | [PaymentMeansResourceLinks](../../eu.epicompany.mobile.core.network.model.wallet/-payment-means-resource-links/index.md) |

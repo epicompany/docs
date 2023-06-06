@@ -3,7 +3,7 @@
 # editPaymentSource
 
 [androidJvm]\
-abstract suspend fun [editPaymentSource](edit-payment-source.md)(consumerId: [UUID4](../../eu.epicompany.mobile.core.datatypes/index.md#545543244%2FClasslikes%2F-1060529556), paymentSourceProfileID: [UUID4](../../eu.epicompany.mobile.core.datatypes/index.md#545543244%2FClasslikes%2F-1060529556), payload: [EditPaymentSourceRequest](../../eu.epicompany.mobile.core.network.model.proxy/-edit-payment-source-request/index.md)): [EditPaymentSourceResource](../../eu.epicompany.mobile.core.network.model.proxy/-edit-payment-source-resource/index.md)
+abstract fun [editPaymentSource](edit-payment-source.md)(consumerId: [UUID4](../../eu.epicompany.mobile.core.datatypes/index.md#545543244%2FClasslikes%2F-1060529556), paymentSourceProfileID: [UUID4](../../eu.epicompany.mobile.core.datatypes/index.md#545543244%2FClasslikes%2F-1060529556), payload: [EditPaymentSourceRequest](../../eu.epicompany.mobile.core.network.model.proxy/-edit-payment-source-request/index.md)): [EditPaymentSourceResource](../../eu.epicompany.mobile.core.network.model.proxy/-edit-payment-source-resource/index.md)
 
 Updates a payment source profile for the specified consumer.
 

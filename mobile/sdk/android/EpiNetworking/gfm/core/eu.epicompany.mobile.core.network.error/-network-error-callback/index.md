@@ -11,4 +11,4 @@ An interface for handling network errors.
 
 | Name | Summary |
 |---|---|
-| [onUnauthorizedCall](on-unauthorized-call.md) | [androidJvm]<br>abstract suspend fun [onUnauthorizedCall](on-unauthorized-call.md)()<br>Handles unauthorized calls. |
+| [onUnauthorizedCall](on-unauthorized-call.md) | [androidJvm]<br>abstract fun [onUnauthorizedCall](on-unauthorized-call.md)()<br>Handles unauthorized calls. |

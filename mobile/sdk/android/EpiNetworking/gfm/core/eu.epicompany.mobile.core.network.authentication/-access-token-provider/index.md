@@ -11,4 +11,4 @@ An interface for providing access tokens.
 
 | Name | Summary |
 |---|---|
-| [provideAccessToken](provide-access-token.md) | [androidJvm]<br>abstract suspend fun [provideAccessToken](provide-access-token.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?<br>Provides an up-to-date access token. |
+| [provideAccessToken](provide-access-token.md) | [androidJvm]<br>abstract fun [provideAccessToken](provide-access-token.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?<br>Provides an up-to-date access token. |

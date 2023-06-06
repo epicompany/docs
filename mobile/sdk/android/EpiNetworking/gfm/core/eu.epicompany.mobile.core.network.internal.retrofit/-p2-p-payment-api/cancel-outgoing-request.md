@@ -6,4 +6,4 @@
 
 @PUT(value = &quot;/api/p2p-requests/{id}//cancellation&quot;)
 
-abstract suspend fun [cancelOutgoingRequest](cancel-outgoing-request.md)(@Path(value = &quot;id&quot;)id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): Response&lt;[Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)&gt;
+abstract fun [cancelOutgoingRequest](cancel-outgoing-request.md)(@Path(value = &quot;id&quot;)id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): Call&lt;[Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)&gt;

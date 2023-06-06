@@ -3,6 +3,6 @@
 # onUnauthorizedCall
 
 [androidJvm]\
-abstract suspend fun [onUnauthorizedCall](on-unauthorized-call.md)()
+abstract fun [onUnauthorizedCall](on-unauthorized-call.md)()
 
 Handles unauthorized calls.

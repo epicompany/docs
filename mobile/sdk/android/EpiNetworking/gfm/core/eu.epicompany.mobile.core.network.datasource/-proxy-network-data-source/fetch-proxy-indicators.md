@@ -3,7 +3,7 @@
 # fetchProxyIndicators
 
 [androidJvm]\
-abstract suspend fun [fetchProxyIndicators](fetch-proxy-indicators.md)(payload: [RetrieveProxyIndicatorsPayload](../../eu.epicompany.mobile.core.network.model.proxy/-retrieve-proxy-indicators-payload/index.md)): [ProxyIndicatorsResponse](../../eu.epicompany.mobile.core.network.model.proxy/-proxy-indicators-response/index.md)
+abstract fun [fetchProxyIndicators](fetch-proxy-indicators.md)(payload: [RetrieveProxyIndicatorsPayload](../../eu.epicompany.mobile.core.network.model.proxy/-retrieve-proxy-indicators-payload/index.md)): [ProxyIndicatorsResponse](../../eu.epicompany.mobile.core.network.model.proxy/-proxy-indicators-response/index.md)
 
 Retrieves the proxy indicators for the provided local proxy hash list.
 

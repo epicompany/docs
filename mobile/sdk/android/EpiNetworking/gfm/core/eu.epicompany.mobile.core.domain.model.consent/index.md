@@ -6,7 +6,7 @@
 
 | Name | Summary |
 |---|---|
-| [Modification](-modification/index.md) | [androidJvm]<br>@Serializable<br>data class [Modification](-modification/index.md)(val cycleIndexes: [IntRange](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/-int-range/index.html), val constraint: [PaymentConstraint](-payment-constraint/index.md)) |
+| [Modification](-modification/index.md) | [androidJvm]<br>@Serializable<br>data class [Modification](-modification/index.md)(val cycleIndexes: [IntRange](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/-int-range/index.html), val constraint: [PaymentConstraint](-payment-constraint/index.md))<br>A modification of a cyclic payment window, it replaces one or more cylces definitions. |
 | [PaymentConstraint](-payment-constraint/index.md) | [androidJvm]<br>@Serializable<br>sealed class [PaymentConstraint](-payment-constraint/index.md) |
 | [PaymentRules](-payment-rules/index.md) | [androidJvm]<br>@Serializable<br>@[JvmInline](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-inline/index.html)<br>value class [PaymentRules](-payment-rules/index.md)(val windowDefinitions: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[WindowDefinition](-window-definition/index.md)&gt;) : [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[WindowDefinition](-window-definition/index.md)&gt; |
 | [Repetition](-repetition/index.md) | [androidJvm]<br>enum [Repetition](-repetition/index.md) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[Repetition](-repetition/index.md)&gt; |

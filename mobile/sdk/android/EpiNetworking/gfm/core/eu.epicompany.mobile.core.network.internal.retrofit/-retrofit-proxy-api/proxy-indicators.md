@@ -6,4 +6,4 @@
 
 @POST(value = &quot;/api/proxy-indicators&quot;)
 
-abstract suspend fun [proxyIndicators](proxy-indicators.md)(@Bodyproxies: [RetrieveProxyIndicatorsPayload](../../eu.epicompany.mobile.core.network.model.proxy/-retrieve-proxy-indicators-payload/index.md)): [ProxyIndicatorsResponse](../../eu.epicompany.mobile.core.network.model.proxy/-proxy-indicators-response/index.md)
+abstract fun [proxyIndicators](proxy-indicators.md)(@Bodyproxies: [RetrieveProxyIndicatorsPayload](../../eu.epicompany.mobile.core.network.model.proxy/-retrieve-proxy-indicators-payload/index.md)): Call&lt;[ProxyIndicatorsResponse](../../eu.epicompany.mobile.core.network.model.proxy/-proxy-indicators-response/index.md)&gt;
